@@ -59,6 +59,5 @@
             <padding><Insets bottom="10.0" left="25.0" right="25.0" top="10.0" /></padding>
             <font><Font name="System Bold" size="14.0" /></font>
         </Button>
-        <Label text="Hackathon 2 - JavaFX Project" style="-fx-font-size: 10px;" textFill="#999999" />
     </VBox>
 </StackPane>
