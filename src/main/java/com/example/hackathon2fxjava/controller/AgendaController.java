@@ -128,10 +128,22 @@ public class AgendaController {
         String apellido = solicitarEntrada("Apellido");
         Contacto temp = new Contacto(nombre, apellido, "000000000");
 
-        if (miAgenda.eliminarContacto(temp)) {
-            mostrarMensajeEnCentro("🗑️ Eliminado", "El contacto ha sido borrado correctamente.");
-        } else {
-            mostrarErrorEnCentro("Error", "No se pudo eliminar: el contacto no existe.");
+        Alert confirm = new Alert(
+                Alert.AlertType.CONFIRMATION,
+                "¿Seguro que deseas eliminar a " + nombre + " " + apellido + "?",
+                ButtonType.YES,
+                ButtonType.NO
+        );
+        confirm.setHeaderText("Confirmar eliminación");
+
+        if (confirm.showAndWait().orElse(ButtonType.NO) == ButtonType.YES) {
+
+
+            if (miAgenda.eliminarContacto(temp)) {
+                mostrarMensajeEnCentro("🗑️ Eliminado", "El contacto ha sido borrado correctamente.");
+            } else {
+                mostrarErrorEnCentro("Error", "No se pudo eliminar: el contacto no existe.");
+            }
         }
     }
 

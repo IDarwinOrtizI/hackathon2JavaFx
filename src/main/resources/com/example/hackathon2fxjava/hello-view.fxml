@@ -22,14 +22,14 @@
                 <Label text="MENÚ" textFill="WHITE">
                     <font><Font name="System Bold" size="18.0" /></font>
                 </Label>
-                <Button maxWidth="Infinity" text="📋 listarContactos" onAction="#listar" />
-                <Button maxWidth="Infinity" text="➕ añadirContacto" onAction="#añadir" />
-                <Button maxWidth="Infinity" text="🫠 existeContacto" onAction="#existe" />
-                <Button maxWidth="Infinity" text="📱 buscaContacto" onAction="#buscar" />
-                <Button maxWidth="Infinity" text="❌ eliminarContacto" onAction="#eliminar" />
-                <Button maxWidth="Infinity" text="👁️‍🗨️ modificarTelefono" onAction="#modificar" />
-                <Button maxWidth="Infinity" text="📫 agendaLlena" onAction="#agendallena" />
-                <Button maxWidth="Infinity" text="📖 espacioLibres" onAction="#espacios" />
+                <Button maxWidth="Infinity" text="📋 Ver contactos" onAction="#listar" />
+                <Button maxWidth="Infinity" text="➕ Añadir contacto" onAction="#añadir" />
+                <Button maxWidth="Infinity" text="☑️Verificar contacto" onAction="#existe" />
+                <Button maxWidth="Infinity" text="📱 Buscar contacto" onAction="#buscar" />
+                <Button maxWidth="Infinity" text="❌ Eliminar contacto" onAction="#eliminar" />
+                <Button maxWidth="Infinity" text="👁️‍🗨️ Modificar teléfono" onAction="#modificar" />
+                <Button maxWidth="Infinity" text="📫 ¿Agenda llena?" onAction="#agendallena" />
+                <Button maxWidth="Infinity" text="📖 Espacios disponibles" onAction="#espacios" />
             </VBox>
         </left>
         <center>
