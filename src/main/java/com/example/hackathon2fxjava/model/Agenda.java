@@ -101,3 +101,9 @@ public class Agenda {
             return false;
         }
     }
+
+//        agendaLlena():
+
+
+
+//        espacioLibres():
