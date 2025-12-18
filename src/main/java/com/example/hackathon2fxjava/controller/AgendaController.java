@@ -90,7 +90,7 @@ public class AgendaController {
         limpiarCentro();
 
         Label titulo = new Label("📔 Lista de Contactos");
-        titulo.setFont(Font.font("System", FontWeight.BOLD, 20));
+        titulo.setFont(Font.font("System", FontWeight.BOLD, 30));
 
         String[] contactos = miAgenda.listarContactos();
 
@@ -99,8 +99,8 @@ public class AgendaController {
         } else {
             ListView<String> listView = new ListView<>();
             listView.getItems().addAll(contactos);
-            listView.setPrefHeight(700);
-            listView.setMaxWidth(700);
+            listView.setPrefHeight(500);
+            listView.setMaxWidth(500);
 
             contentArea.getChildren().addAll(titulo, listView);
         }

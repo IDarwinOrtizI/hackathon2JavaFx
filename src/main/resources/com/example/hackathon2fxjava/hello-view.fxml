@@ -44,7 +44,7 @@
         <padding>
             <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
         </padding>
-        <Label text="📇" style="-fx-font-size: 80px;"/>
+        <Label text="📫" style="-fx-font-size: 100px;"/>
         <VBox alignment="CENTER" spacing="5.0">
             <Label text="Agenda Pro">
                 <font><Font name="System Bold" size="28.0" /></font>
