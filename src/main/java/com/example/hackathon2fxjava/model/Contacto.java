@@ -11,11 +11,11 @@ public class Contacto {
 
     public Contacto(String nombre, String apellido, String telefono) {
 
-        if (nombre == null || nombre.trim().isEmpty()) {
+        if (!Validador.validarTexto(nombre)) {
             throw new IllegalArgumentException("¡Oops! El campo 'nombre' no puede estar vacío.");
         }
 
-        if (apellido == null || apellido.trim().isEmpty()) {
+        if (!Validador.validarTexto(apellido)) {
             throw new IllegalArgumentException("¡Oops! El campo 'apellido' no puede estar vacío.");
         }
 
