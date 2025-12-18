@@ -100,10 +100,28 @@ public class Agenda {
             }
             return false;
         }
-    }
+
 
 //        agendaLlena():
 
-
+        public boolean agendaLlena() {
+            for (Contacto c : contactos) {
+                if (c == null) {
+                    return false;
+                }
+            }
+            return true;
+        }
 
 //        espacioLibres():
+
+        public int espaciosLibres(){
+             int libres= 0;
+             for (Contacto c : contactos) {
+                 if (c == null) {
+                     libres++;
+                 }
+             }
+            return libres;
+        }
+}
